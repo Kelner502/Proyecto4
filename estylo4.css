@@ -1,0 +1,121 @@
+/* INSERTO UNA IMAGEN AL BODY DE MI PAGINA */
+body {
+    height: 100px;
+ 
+    background-image: url("1.jpg");
+  background-size: cover;
+    background-repeat:no-repeat;
+   background-position: 0px  -100px;
+  }
+/* LE COLOCO ESTILOS AL TITULO  */
+.title{
+    text-align: center;
+    font-size: 4em;
+    font-weight: 600;
+    color: rgb(255, 251, 0);
+    text-shadow: 0 0 5px #000000,
+    0 0 25px #ffffff, 
+    0 0 50px #ffffff,
+    0 0 100px #ffffff;
+    letter-spacing: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 1s;
+    padding: -200%;
+}
+/* APLICO TAMAÑO DE LETRAS AL NOMBRE DE CADA POKEMON */
+#nombre{
+    font-size: 150%;
+}
+/* ESTILOS PARA  EL CONTENEDOR DE MIS POKEMONES */
+.pokemon-list{
+    display: grid;
+   grid-template-columns: 200fr 340px 200fr; 
+   max-width:1000px;
+   margin: auto;
+   height: 100%;
+
+
+}
+/* ESTILOS PARA EL CONTENEDOR HIJO (DE MIS POQUEMOSNES) */
+.pokemon{
+ border-top: rgb(246, 255, 0) 5px solid;  
+
+ width:85%;
+height: 85%;
+background-color: rgba(92, 91, 91, 0.725);
+text-align: center;
+float: left;
+margin: 4px;
+border-radius: 2%;
+
+box-shadow: 2px 2px 5px rgb(0, 0, 0);
+-moz-box-shadow: 2px 2px 5px rgb(0, 0, 0);
+filter: shadow(color=#000000, direction=135, strength=2);
+}
+/* EFECTO HOVER DE MIS POQUEMONES */
+.pokemon:hover{
+
+    width: 90%;
+    height: 90%;
+    color: rgb(255, 0, 0);
+}
+/* ESTILOS DE FLECHA */
+#flecha{
+    text-align:right; 
+    margin: 8%;
+margin-top: -10%;
+    font-size: 200%;
+    color:rgb(217, 255, 0);
+}
+
+img{
+    height:130px;
+    width: 130px;
+}
+
+/* ESTILO MODO RESPONSIVO PARA VISUALIZARLO EN MOVIL */
+
+@media screen and (max-width:1040px) {
+    body {
+        background-color: #f0f800;
+        height: 0px;
+     
+        background-image: url("") ;
+      background-size: cover;
+        background-repeat:no-repeat;
+       background-position: 0px  0px;
+  
+    }
+     .title{
+        text-align: center;
+        font-size: 3em;
+        font-weight: 500;
+        color: #fff;
+        text-shadow: 0 0 5px #f40303,
+        0 0 25px #f40303, 
+        0 0 50px #f40303,
+        0 0 100px #f40303;
+        letter-spacing: 8px;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: 1s;
+        padding: -200%;
+    }
+    .pokemon-list{
+        display: grid;
+       grid-template-columns: 200fr 150px 200fr; 
+       max-width:900px;
+       margin: auto;
+       height: 100%;
+
+    }
+
+    #flecha{
+        text-align:right; 
+        margin: 8%;
+    margin-top: -40%;
+        font-size: 200%;
+        color:rgb(217, 255, 0);
+    }
+}
